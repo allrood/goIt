@@ -1,17 +1,10 @@
-var num = 123;
+var vasya = {name: 'Vasya',
 
-var obj = {
-	test: 123
+greetings: function() {
 
-};
-function updateObj(a) {
-	a.test = 5;
-}
+	console.log('My name is ' +this.name)
+	}
 
-function updateNum(a) {
-	a = 5;
-}
-updateNum(num);
-updateObj(obj);
-console.log('obj', obj);
-console.log('num', num);
+};        
+
+vasya.greetings();
