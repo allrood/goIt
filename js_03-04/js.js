@@ -1,4 +1,11 @@
-var element = document.querySelectorAll('.menu-item a');
-console.log("element[2].innerHTML ", element[2].innerHTML);
-element[2].innerHTML = 'some text';
-console.log( element[2].setAttribute('href')) ;
+var element = document.createElement('div');
+element.classList.add('box');
+element.innerHTML = 'created element';
+
+var wrapper = document.querySelector('.wrapper');
+
+// wrapper.appendChild(element);
+// wrapper.insertBefore(element, wrapper.children[1]);
+
+var list = wrapper.querySelector('ul');
+wrapper.replaceChild(element, list);
