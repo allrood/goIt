@@ -35,7 +35,9 @@ newDom = {
         }
     },
     createButton: function () {
-        this.form.appendChild(this.button);
+        var center = document.createElement('center');
+        this.form.appendChild(center);
+        center.appendChild(this.button);
         this.button.innerHTML = 'Проверить результат';
     }
 
