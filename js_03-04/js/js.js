@@ -39,6 +39,7 @@ newDom = {
         this.form.appendChild(center);
         center.appendChild(this.button);
         this.button.innerHTML = 'Проверить результат';
+        // test push
     }
 
 
